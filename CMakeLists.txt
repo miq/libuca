@@ -11,7 +11,7 @@ set(UCA_DESCRIPTION "Unified Camera Access")
 # These are software release versions
 set(UCA_VERSION_MAJOR "1")
 set(UCA_VERSION_MINOR "4")
-set(UCA_VERSION_PATCH "3")
+set(UCA_VERSION_PATCH "4")
 set(UCA_VERSION_STRING "${UCA_VERSION_MAJOR}.${UCA_VERSION_MINOR}.${UCA_VERSION_PATCH}")
 
 # Increase the ABI version when binary compatibility cannot be guaranteed, e.g.
@@ -27,8 +27,8 @@ set(PACKAGE_STRING "${PACKAGE_NAME} ${PACKAGE_VERSION}")
 set(PACKAGE_BUGREPORT "http://ufo.kit.edu/ufo/newticket")
 
 set(CPACK_GENERATOR "DEB;RPM")
-set(CPACK_PACKAGE_RELEASE 3)
-set(CPACK_RPM_PACKAGE_RELEASE 3)
+set(CPACK_PACKAGE_RELEASE 1)
+set(CPACK_RPM_PACKAGE_RELEASE ${CPACK_PACKAGE_RELEASE})
 set(CPACK_DEBIAN_PACKAGE_NAME "${CPACK_PACKAGE_NAME}")
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Matthias Vogelgesang <matthias.vogelgesang@kit.edu>")
 set(CPACK_DEBIAN_PACKAGE_DESCRIPTION ${UCA_DESCRIPTION})
